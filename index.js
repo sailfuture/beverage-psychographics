@@ -39,10 +39,6 @@ const psychographics = [
     description: "Demonstrate an interest in maintaining a healthy lifestyle, including physical fitness, nutrition, and mental well-being. They may engage in sports, fitness activities, and follow healthy eating habits."
   },
   {
-    category: "Diversity and Inclusion",
-    description: "Embrace diversity and inclusivity, valuing people from different backgrounds and cultures. They may actively participate in initiatives that promote diversity and stand against discrimination."
-  },
-  {
     category: "Academic Achievers",
     description: "Emphasize academic performance and strive for high grades. They may be goal-oriented, focused on future educational opportunities, and participate in extracurricular activities or clubs related to their academic interests."
   },
@@ -61,10 +57,6 @@ const psychographics = [
   {
     category: "Adventure Readers",
     description: "Show a love for books and engage with adventure, fantasy, or science fiction genres. They enjoy escaping into imaginative worlds and may be members of book clubs or avid readers of popular book series."
-  },
-  {
-    category: "Community Volunteers",
-    description: "Actively engage in community service or volunteering initiatives. They may participate in local charities, environmental cleanups, fundraising events, or support social causes."
   },
   {
     category: "Technology Innovators",
