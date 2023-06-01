@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SailFuture Academy</title>
+    <meta charset="UTF-8" />
+    <script defer src="index.js"></script>
+    <script src="boolean.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Psychographic Generator</h1>
+      <button id="generateBtn">Generate Random Psychographic</button>
+      <p id="result"></p>
+      <p id="description"></p>
+    </div>
+  
+    <script>
+      // Define an array of psychographics
+      const psychographics = [
+        { 
+          psychographic: 'Social Media Enthusiasts',
+          description: 'These individuals engage heavily with social media platforms, enjoying content creation and consumption, connecting with friends, and staying updated on the latest trends.'
+        },
+        // Add the other psychographics with their descriptions here
+      ];
+  
+      // Function to generate a random psychographic
+      function generateRandomPsychographic() {
+        // Get a random index from the psychographics array
+        const randomIndex = Math.floor(Math.random() * psychographics.length);
+  
+        // Retrieve the psychographic and description at the random index
+        const { psychographic, description } = psychographics[randomIndex];
+  
+        // Return the random psychographic
+        return { psychographic, description };
+      }
+  
+      // Get the button element
+      const generateBtn = document.getElementById('generateBtn');
+  
+      // Get the result and description elements
+      const result = document.getElementById('result');
+      const description = document.getElementById('description');
+  
+      // Event listener for button click
+      generateBtn.addEventListener('click', function() {
+        // Generate a random psychographic
+        const { psychographic, description: psychographicDescription } = generateRandomPsychographic();
+  
+        // Display the random psychographic and description
+        result.textContent = `Random Psychographic: ${psychographic}`;
+        description.textContent = `Description: ${psychographicDescription}`;
+      });
+    </script>
+  </body>
+  </html>
+</html>
+
